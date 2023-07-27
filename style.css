@@ -50,10 +50,14 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #3e3e3e;
+  transition: color 0.3s;
+
+  
 }
 
 header nav ul li a:hover {
   color: #3e50e5;
+  cursor: pointer;
 }
 
 header nav ul li:last-of-type {
@@ -120,6 +124,14 @@ section.hero {
   line-height: 21px;
   justify-content: center;
   align-items: center;
+  transition: color 0.4s;
+}
+
+.hero-content button:hover {
+  border: 1px solid #3e50e5;
+  background: #fff;
+  color: #3e50e5;
+  cursor: pointer;
 }
 
 /* BEST SELLERS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -248,9 +260,17 @@ section.best-sellers {
   height: 41px;
   padding: 10px;
   border-radius: 25px;
-  background-color: white;
-
+  background: white;
   border: 1px solid #000;
+
+  transition: background 0.3s;
+}
+
+.best-sellers .product-slider .product .product-info button:hover {
+  background: #3e50e5;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 /* NEWSLETTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -315,8 +335,18 @@ section.newsletter button {
   font-style: normal;
   font-weight: 400;
   line-height: 18px; /* 150% */
+  text-transform: uppercase;
   border: none;
   margin: 0;
+
+  transition: background-color 0.3s;
+}
+
+section.newsletter button:hover {
+  background-color: white;
+  color: #3e50e5;
+  border: #3e50e5 1px solid;
+  cursor: pointer;
 }
 
 /* FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
