@@ -22,12 +22,24 @@
             <li><a href="#">About us</a></li>
             <li><a href="#">Sale</a></li>
             <li><a href="#">Newsletter </a></li>
+            <li class="menu-icon">
+              <img src="assets/menu_icon.png" alt="menu-icon" />
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <section class="hero">
-      <img src="assets/Hero_image.jpg" alt="imagem de um smart watch" />
+      <picture>
+        <source media="(min-width: 960px)" srcset="assets\Hero_Desktop.jpg" />
+        <source media="(min-width: 576px)" srcset="assets\Hero_Tablet.jpg" />
+        <source media="(max-width: 576px)" srcset="assets\Hero_Mobile.jpg" />
+        <img
+          src="assets/Hero_Large_Desktop.jpg"
+          alt="imagem de um smart watch"
+        />
+      </picture>
+
       <div class="hero-content">
         <div class="container">
           <h1>Explore our new smart watch series</h1>
@@ -99,12 +111,14 @@
     </section>
 
     <section class="newsletter">
-      <h3>Newsletter signup</h3>
-      <p>Subscribe now and don't miss a single deal!</p>
-      <form>
-        <input type="email" name="email" placeholder="Your email" />
-        <button type="submit">Subscribe</button>
-      </form>
+      <div class="container">
+        <h3>Newsletter signup</h3>
+        <p>Subscribe now and don't miss a single deal!</p>
+        <form>
+          <input type="email" name="email" placeholder="Your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
     </section>
   </body>
   <footer>

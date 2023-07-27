@@ -3,17 +3,18 @@ body {
   font-family: "Heebo", sans-serif;
   padding-top: 70px;
 }
-
-.container {
-  max-width: 1180px;
-  margin: auto;
-  padding: 0 16px;
-}
-
 ul {
   margin: 0;
   padding: 0;
 }
+
+.container {
+  width: 1440px;
+  max-width: 90%;
+  margin: auto;
+  padding: 0 16px;
+}
+
 /* HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 header {
   background: #fff;
@@ -42,15 +43,26 @@ nav {
 
 header nav ul li {
   display: inline-block;
-  font-size: 15px;
-  letter-spacing: 0.37px;
-  margin-right: 26px;
+}
+
+header nav ul li.menu-icon {
+  display: none;
+}
+
+header nav ul li.menu-icon img {
+  vertical-align: middle;
+  height: auto;
+  width: 24px;
 }
 
 header nav ul li a {
   text-decoration: none;
   color: #3e3e3e;
   transition: color 0.3s;
+
+  font-size: 15px;
+  letter-spacing: 0.37px;
+  margin-right: 26px;
 }
 
 header nav ul li a:hover {
@@ -91,9 +103,9 @@ section.hero {
 
 .hero-content h1 {
   max-width: 495px;
-  font-size: 44px;
+  font-size: 50px;
   font-weight: 400;
-  line-height: 50px;
+  line-height: 56px;
   color: #fff;
   margin-bottom: 13px;
   margin-top: 0;
@@ -101,9 +113,9 @@ section.hero {
 
 .hero-content p {
   max-width: 518px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 28px;
   color: #fff;
   margin-bottom: 13px;
   margin-top: 0;
@@ -111,15 +123,17 @@ section.hero {
 
 .hero-content button {
   border: none;
-  max-width: 220px;
+  max-width: 200px;
   height: 50px;
   padding: 10px;
   border-radius: 25px;
   background-color: #3e50e5;
+
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 24px;
+
   justify-content: center;
   align-items: center;
   transition: color 0.4s;
@@ -156,7 +170,7 @@ section.best-sellers {
   font-size: 34px;
   font-style: normal;
   font-weight: 400;
-  line-height: 38px;
+  line-height: 42px;
   margin: 0 0 16px 0;
 }
 
@@ -205,7 +219,7 @@ section.best-sellers {
   color: #3e50e5;
   text-align: center;
 
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 250% */
@@ -217,7 +231,7 @@ section.best-sellers {
 
   /* desktop/body */
 
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
@@ -231,7 +245,7 @@ section.best-sellers {
 
   /* desktop/tittle */
 
-  font-size: 24px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: 30px; /* 125% */
@@ -254,8 +268,8 @@ section.best-sellers {
 }
 
 .best-sellers .product-slider .product .product-info button {
-  width: 180px;
-  height: 41px;
+  width: 220px;
+  height: 40px;
   padding: 10px;
   border-radius: 25px;
   background: white;
@@ -275,7 +289,7 @@ section.best-sellers {
 
 section.newsletter {
   background-color: rgba(200, 200, 200, 0.192);
-  max-width: 880px;
+  max-width: 955px;
   text-align: center;
   padding: 72px;
   margin: 80px auto;
@@ -289,7 +303,7 @@ section.newsletter form {
 section.newsletter h3 {
   color: black;
   text-align: center;
-  font-size: 22px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 42px; /* 190.909% */
@@ -300,7 +314,7 @@ section.newsletter h3 {
 section.newsletter p {
   color: #000;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px; /* 150% */
@@ -317,6 +331,11 @@ section.newsletter input {
   margin: 0;
   box-sizing: border-box;
   color: #3e3e3e;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 section.newsletter button {
@@ -329,10 +348,10 @@ section.newsletter button {
 
   color: #fff;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 150% */
+  line-height: 21px; /* 150% */
   text-transform: uppercase;
   border: none;
   margin: 0;
@@ -382,7 +401,7 @@ footer .copyright-text {
 
 footer .bottom-nav .container .list-title {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
@@ -398,10 +417,10 @@ footer .bottom-nav .container a {
   text-decoration: none;
   color: #e0e0e0;
 
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21px; /* 150% */
+  line-height: 24px; /* 150% */
 
   transition: color 0.3s;
 }
@@ -410,3 +429,108 @@ footer .bottom-nav .container a:hover {
   color: #3e50e5;
   cursor: pointer;
 }
+
+/* DESIGN FOR SMALL DESKTOPS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+  .container {
+    width: 1180px;
+    max-width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+
+  .hero-content p {
+    max-width: 518px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .hero-content button {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+/* END OF DESIGN FOR SMALL DESKTOPS >>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* DESIGN FOR TABLETS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  /* HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .container {
+    max-width: 92%;
+  }
+
+  header nav ul li {
+    display: none;
+  }
+
+  header nav ul li.menu-icon {
+    display: inline-block;
+  }
+
+  /* HERO SECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .hero-content h1 {
+    max-width: 377px;
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .hero-content p {
+    max-width: 518px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .hero-content button {
+    max-width: 196px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+/* END OF DESIGN FOR TABLETS >>>>>>>>>>>>>>>>>> */
+
+/*DESIGN FOR SMARTPHONES >>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 92%;
+  }
+
+  header nav ul li {
+    display: none;
+  }
+
+  header nav ul li.menu-icon {
+    display: inline-block;
+  }
+
+  .hero-content {
+    position: static;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 38px;
+    margin: 16px 0 32px 0;
+    color: black;
+  }
+
+  .hero-content p {
+    display: none;
+  }
+
+  .hero-content button {
+    width: 196px;
+    font-size: 14px;
+    line-height: 21px;
+
+    margin: auto;
+  }
+}
+
+/* END OF DESIGN FOR PHONES >>>>>>>>>>>>>>>>>>>>> */
